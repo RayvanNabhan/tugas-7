@@ -1,0 +1,49 @@
+nilai = int(input("Insert Nilai : "))
+
+grade =''
+
+if nilai >= 80 and nilai <=100:
+    if nilai ==80:
+        print(f"{nilai} = A")
+    if nilai <= 100:
+        print(f"{nilai} = A")
+        grade = 'LOLOS'
+elif nilai >= 60 and nilai <=80:
+    if nilai ==60:
+        print(f"{nilai} = B")
+    if nilai <= 80:
+        print(f"{nilai} = B")
+        grade ='DIPERTIMBANGKAN'
+elif nilai < 60:
+    print(f"{nilai} = GAGAL")
+
+if grade !='':
+    print(f"{grade} \nSelamat Kamu Berhasil Menjadi Calon Programmer!")
+else:
+    print(f"{grade} \nMaaf Kamu Belum Berhasil Menjadi Calon Programmer")
+100 = A
+LOLOS 
+Selamat Kamu Berhasil Menjadi Calon Programmer!
+Persegi FC
+number = int(input("Insert back number : "))
+position = []
+
+if number % 2 == 0:
+    position.append("Target Attacker")
+elif number % 2 == 0 and 50 <= number <= 100:
+    position.append("Capten Team")
+elif number % 2 != 0:
+    position.append("Defender")
+elif number % 2 != 0 and number > 90:
+    position.append("Playmaker")
+elif number % 2 != 0 and number % 3 == 0 and number % 5 == 0:
+    position.append("Keeper")
+
+# Show Result
+if len(position) == 0:
+    print("Doesn't fulfill any position.")
+else:
+    print(f"The back number {number} can serve as a position :")
+    for p in position:
+        print("-", p)
+The back number 2 can serve as a position :
